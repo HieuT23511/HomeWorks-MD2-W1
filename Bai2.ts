@@ -1,3 +1,5 @@
+//Viết chương trình đầu vào 4 mảng, đầu ra mảng có tổng các phần tử lớn nhất
+
 // function exercise2(arr1: number[], arr2: number[], arr3: number[], arr4: number[]) {
 //     let arr: number[][] = [];
 //     arr.push(arr1, arr2, arr3, arr4);
@@ -12,9 +14,9 @@ function exercise2 (...arr:number[][]){
 }
 
 function sumElt(array: number[]) {
-    let total: number = 0;
-    array.forEach(elt => total += elt);
-    return total;
+    // let total: number = 0;
+    // array.forEach(elt => total += elt);
+    return array.reduce((a,b)=>a+b);
 }
 let arr1= [1,3,5,7];
 let arr2= [11,6,5,7];
